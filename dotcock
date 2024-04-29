@@ -108,7 +108,7 @@ local PredictionValue = 0.11456257
                 if Settings.rewrittenmain.NOTIF == true then
                     Plr = getClosestPlayerToCursor()
                 game.StarterGui:SetCore("SendNotification", {
-						Title = "Tokyo Private | /hol Made by vnly",
+						Title = "Allah ware | /hol",
 						Text = "Unlocked Dot Lock",
 						Icon = "",
 						Duration = 1,
@@ -120,7 +120,7 @@ local PredictionValue = 0.11456257
                 if Settings.rewrittenmain.NOTIF == true then
  
                     game.StarterGui:SetCore("SendNotification", {
-						Title = "Tokyo Private | /hol Made by vnly",
+						Title = "Allah Ware | /hol",
 						Text = "Locked on :"..tostring(Plr.Name); 
 						Icon = "",
 						Duration = 1,
@@ -407,11 +407,11 @@ Mouse.KeyDown:Connect(function(k)
                 if Victim ~= nil then	
                     Victim = nil	
  
-                    Notify("Vnly unlocked | /hol")	
+                    Notify("Allah Ware unlocked | /hol")	
                 end	
             end	
         else	
-            Notify("Vnly locked | /hol")	
+            Notify("Allah Ware locked | /hol")	
         end	
     end	
     if k == SelectedDisableKey then	
