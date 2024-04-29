@@ -108,7 +108,7 @@ local PredictionValue = 0.119350
                 if Settings.rewrittenmain.NOTIF == true then
                     Plr = getClosestPlayerToCursor()
                 game.StarterGui:SetCore("SendNotification", {
-						Title = "Vnly Dot | /hol",
+						Title = "Tokyo Private | /hol Made by vnly",
 						Text = "Unlocked Dot Lock",
 						Icon = "",
 						Duration = 1,
@@ -120,7 +120,7 @@ local PredictionValue = 0.119350
                 if Settings.rewrittenmain.NOTIF == true then
  
                     game.StarterGui:SetCore("SendNotification", {
-						Title = "Vnly Dot | /hol",
+						Title = "Tokyo Private | /hol Made by vnly",
 						Text = "Locked on :"..tostring(Plr.Name); 
 						Icon = "",
 						Duration = 1,
