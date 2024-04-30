@@ -17,7 +17,7 @@ local Settings = {
  
 local SelectedPart = "UpperTorso"                              
 local Prediction = true
-local PredictionValue = 0.11656257                            
+local PredictionValue = 0.11936257                            
  
  
     local AnchorCount = 0
