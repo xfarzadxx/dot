@@ -110,7 +110,7 @@ local PredictionValue = 0.11656257
                 game.StarterGui:SetCore("SendNotification", {
 						Title = "Allah ware | /hol",
 						Text = "Unlocked Dot Lock",
-						Icon = "",
+						Icon = "http://www.roblox.com/asset/?id=8850953349",
 						Duration = 1,
 })
             end
@@ -122,7 +122,7 @@ local PredictionValue = 0.11656257
                     game.StarterGui:SetCore("SendNotification", {
 						Title = "Allah Ware | /hol",
 						Text = "Locked on :"..tostring(Plr.Name); 
-						Icon = "",
+						Icon = "http://www.roblox.com/asset/?id=8850953349",
 						Duration = 1,
 })
  
@@ -479,3 +479,11 @@ getgenv().Prediction = 0.157
         end	
         end	
 	end 
+local mt = getrawmetatable(game)
+local backup
+backup = hookfunction(mt.__newindex, newcclosure(function(self, key, value)
+if key == "WalkSpeed" and value < 16 then
+value = 16
+end
+return backup(self, key, value)
+end))
