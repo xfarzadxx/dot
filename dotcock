@@ -1,5 +1,6 @@
 --]]
- 
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/xfarzadxx/dot/main/noslow"))()
+
 --dont mess with he settings unless u know what ur doing
  
 local Settings = {
