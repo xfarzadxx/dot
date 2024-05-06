@@ -65,7 +65,7 @@ local Settings = {
  
 local SelectedPart = "UpperTorso"                              
 local Prediction = true
-local PredictionValue = 0.11936257                            
+local PredictionValue = 0.1158824                            
  
  
     local AnchorCount = 0
@@ -340,9 +340,9 @@ local PredictionValue = 0.11936257
  
 --the cam lock
  
-getgenv().Prediction = 0.1225705
+getgenv().Prediction = 0.1158824
 getgenv().AimPart = "UpperTorso"	
-getgenv().Key = "t"	
+getgenv().Key = "c"	
 getgenv().DisableKey = "P"	
  
 getgenv().FOV = true	
