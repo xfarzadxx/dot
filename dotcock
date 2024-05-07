@@ -342,7 +342,7 @@ local PredictionValue = 0.1158824
  
 getgenv().Prediction = 0.1211
 getgenv().AimPart = "UpperTorso"	
-getgenv().Key = "c"	
+getgenv().Key = "t"	
 getgenv().DisableKey = "P"	
  
 getgenv().FOV = true	
